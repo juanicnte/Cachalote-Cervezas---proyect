@@ -1,0 +1,45 @@
+/*Nombre de Usuario*/
+.nombre-usuario{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.nombre-usuario input{
+    padding-left: 0.5rem;
+    margin-top: 5%;
+    width: 70%;
+    height: 2rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/*contraseña*/
+.contraseña{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contraseña input{
+    padding-left: 0.5rem;
+    margin-top: 5%;
+    width: 70%;
+    height: 2rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/*Button*/
+.botones{
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 4rem;
+    width: 70%;
+    background-color: #1259c3;
+    border-radius: 10px;
+}
+
+.botones button {
+    color: white;
+    background-color: #1259c3;
+    font-size: 1.125rem;
+}

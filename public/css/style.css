@@ -23,6 +23,20 @@
 .header-top-bar{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.barraDeBusqueda{
+    height: 2rem;
+    background-color: white;
+    border: white solid 2px;
+    border-radius: 10px;
+}
+
+.barraDeBusqueda a{
+    text-decoration: none;
+    color: #666;
 }
 
 .menus a{ 
@@ -65,18 +79,6 @@ body header{
 
 }
 
-
-
-.barra-busqueda{
-    display: flex;
-    font-size: 12px;
-    border: #1259c3 solid 2px;
-
-}
-
-.barra-busqueda input{
-}
-
 .barraDesplegable{
     background-color: #1259c3;
     color: white;
@@ -96,12 +98,26 @@ body header{
     font-size: 12px;
 }
 
+.header-top-bar input{
+    text-align: center;
+    margin-top: 5px ;
+    padding: 1px;
+}
+
+.header-top-bar i {
+    margin-left: 8px;
+    color: #818181;
+}
+
 /*main*/
 
 main {
-    text-align: center;
     padding: 0.625rem;
     background-color: #ebebeb;
+}
+
+picture{
+    text-align: center;
 }
 
 .images img{
@@ -113,14 +129,19 @@ li{
 }
 
 .article-container{
-    margin-bottom: 8%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.ultima-vista-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
 
-
-.envio-icon i{
+.envio i{
     padding: 0.313rem;
     width: 1.875rem;
     height: 1.875rem;
@@ -129,13 +150,13 @@ li{
     border-radius: 50%;
     color: #39b54a;
     position: absolute;
-    right: 25vw;
-    margin-bottom: -14px;
+    top: -15px;
+    right: 20%;
+    
 }
 
-.envio-icon{
-display: flex;
-align-items: flex-end;
+.envio{
+    position: relative;
 }
 h5{
     font-size: 1.125rem;
@@ -153,17 +174,25 @@ h1{
 
 .product{
     border-top: 2px solid #ebebeb;
+    position: relative;
 
 }
 
 .info-product{
     display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: solid 2px #ebebeb;
+    padding-left: 0.6rem;
 }
 
 article h6{
     color:grey;
     margin-top: 3%;
     text-align: left;
+    padding: 0.2rem;
+    margin-top: 0.1rem;
+    margin-left: 0.2rem;
 }
 .info-product h4{
     color: #404040;
@@ -172,84 +201,82 @@ article h6{
     font-weight: 300;
 }
 .info-product h5{
-    font-style: normal;
     font-size: 12px;
     color: #39b54a;
-    margin-left: 2%;
+    margin-left: 0.1rem;
     margin-top: 1.21rem;
     align-items: center;
     }
 
 #ultimaVista{
     font-size: 1.5rem;
+    text-align: center;
 }
 
 #ofertas {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 /* ultimaVista-section */
+
+
+
 .caf{
     background-color: white;
     border-top: 0.063rem solid #ebebeb;
     margin: 0.625rem;
-    padding: 0.928rem;
 }
-
-.ultima-vista-section{
-}
-
-
 
 .macbook-pro-2019{
     background-color: white;
     border-top: 0.063rem solid #ebebeb;
     margin: 0.625rem;
-    padding: 0.928rem;
 }
 
 .samsung-galaxy{
     background-color: white;
     border-top: 0.063rem solid #ebebeb;
     margin: 0.625rem;
-    padding: 0.928rem;
 }
 
 .smart-tv-samsung{
     background-color: white;
     border-top: 0.063rem solid #ebebeb;
     margin: 0.625rem;
-    padding: 0.928rem;
 }
 
 /*offers-section*/
+
+.seccion-ofertas{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 .cafetera-off{
     background-color: white;
     border-top: 0.063rem solid #ebebeb;
     margin: 0.625rem;
-    padding: 0.928rem;
 }
 
 .macbook-off{
     background-color: white;
     border-top: 0.063rem solid #ebebeb;
     margin: 0.625rem;
-    padding: 0.928rem;
 }
 
 .samsung-off{
     background-color: white;
     border-top: 0.063rem solid #ebebeb;
     margin: 0.625rem;
-    padding: 0.928rem;
 }
 
 .smart-off{
     background-color: white;
     border-top: 0.063rem solid #ebebeb;
     margin: 0.625rem;
-    padding: 0.928rem;
 }
 
 /* footer */
@@ -306,17 +333,7 @@ footer h2{
 
 @media (min-width: 361px)  {
     .article-container {
-        margin: auto;
-        max-width: 60rem;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .header-top-bar{
-        display: flex;
-        justify-content: space-between;
-    }
-    .eslogan{
-        max-width: 40%;
-        text-align: right;
     }
     .menus{
         display: flex;
@@ -339,17 +356,80 @@ footer h2{
         display: none;
     }
 
-}
+    .macbook-pro-2019{
+        display: none;
+    }
 
-@media (min-width:768px) {
+    .samsung-galaxy{
+        display: none;
+    }
+    .smart-tv-samsung{
+        display: none;
+    }
+
+    .cafetera-off{
+        display: none;
+    }
+
+    .samsung-off{
+        display: none;
+    }
+
+    .smart-off{
+        display: none;
+    }
+}
+@media (min-width:768px){
     .barraDesplegable {
         display: none;
     }
 }
 
-@media (min-width:1200px) {
+
+@media (min-width:768px) and (max-width: 1023px){
+    
+    .eslogan{
+        max-width: 40%;
+        text-align: right;
+    }
+    .samsung-galaxy{
+        display: none;
+    }
+    .smart-tv-samsung{
+        display: none;
+    }
+
+    .article-container{
+        width: 40%;
+    }
+
+    .seccion-ofertas{
+        flex-wrap: nowrap;
+    }
+    .cafetera-off{
+        display: none;
+    }
+
+    .samsung-off{
+        display: none;
+    }
+
+    
+
+}
+
+@media (min-width:1024px) {
     .container-header, .menus {
         max-width: 1200px;
         margin: auto;
     }
+
+    .ultima-vista-section{
+        flex-wrap: nowrap;
+    }
+
+    .seccion-ofertas{
+        flex-wrap: nowrap;
+    }
+    
 }
