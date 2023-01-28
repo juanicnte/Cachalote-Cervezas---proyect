@@ -1,0 +1,127 @@
+header{
+  background-color: #181818;
+}
+  
+/* estilos menu hamburguesa */
+.btn-container{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn{
+  background: #181818;
+  
+  width: 50px;
+  height: 50px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border: none;
+  cursor: pointer;
+
+  transition: .5s;
+}
+
+.btn-content:nth-child(1){
+  margin: 1px;  
+  height: 3px;
+  width: 30px;
+  transition: .5s;
+  border-top: 2px solid #fafafa;
+  position: relative;
+}
+.btn-content:nth-child(2){
+  margin: 1px;  
+  height: 3px;
+  width: 30px;
+  transition: .5s;
+  border-top: 2px solid #fafafa;
+}
+.btn-content:nth-child(3){
+  margin: 1px;  
+  height: 3px;
+  width: 30px;
+  transition: .5s;
+  border-top: 2px solid #fafafa;
+  position: relative;
+}
+
+#btn.active{
+  background-color: #181818;
+}
+
+#btn.active .btn-content:nth-child(1){
+  transform: rotate(135deg);
+  top: 3px;
+}
+
+#btn.active .btn-content:nth-child(2){
+  border-top: transparent;
+}
+#btn.active .btn-content:nth-child(3){
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
+/*2*/
+#mobile-nav{
+  font-size: 3rem;
+  position: fixed;
+    top: 5vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-content: center;
+    background-color: #181818;
+    color: #fafafa;
+    z-index: 0;
+    transition: all 0.3s ease-out;
+    transform: translateX(-200%);
+}#mobile-nav.active{
+  transform: translateX(0);
+  transition: all 0.5s ease-out;
+}#mobile-nav img{
+  position: fixed;
+  left: 3rem;
+  top: 0;
+}#mobile-nav a{
+  color: #fafafa;
+}
+#logo-container{
+  position: relative;
+}
+#menu-cervezas{
+  position: relative;
+  color: #fafafa;
+}
+#menu-cervezas .a{
+  display: none;
+  margin: 1rem;
+  font-size: 24px;
+}
+#menu-cervezas:hover .a{
+  display: flex;
+}
+.a a{
+  color: #fafafa;
+  font-size: 16px;
+}
+#desplegable i{
+  font-size: 26px;
+}
+
+/* fin estilos menu hamburguesa */
+#imagen-cacha{
+  width: 100%;
+}

@@ -1,0 +1,1 @@
+document.querySelector('#btn').addEventListener('click', () => document.querySelector('#mobile-nav').classList.toggle('active'))

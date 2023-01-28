@@ -1,435 +1,75 @@
+@import url('header.css');
+@import url('footer.css');
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Alegreya SC', serif;
     padding: 0;
     box-sizing: border-box;
     margin: 0;
     border: 0;
     border: none;
-
 }
-
-/*header*/
-
-.logo{
-    display: inline-block;
-    width: 20vw;
-}
-
-.banner{
-    display: flex;
-    width: 100%;
-}
-
-.header-top-bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.barraDeBusqueda{
-    height: 2rem;
-    background-color: white;
-    border: white solid 2px;
-    border-radius: 10px;
-}
-
-.barraDeBusqueda a{
-    text-decoration: none;
-    color: #666;
-}
-
-.menus a{ 
-    color: black;
-    text-decoration: none;
-    font-size: 0.75rem;
-}
-
-.banner img{
-    flex-grow: 1;
-    max-width: 100%;
-
-}
-
-.eslogan{
-    max-width: none;
-    font-size: 0.6rem;
-    font-weight: 400;
-    text-align: center;
-}
-
-.main-header{
-    background-color: rgb(255, 217, 0);
-}
-
-body header{
+body{
+    background-image: url(../images/muro-hormigon-gris.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    padding: 3%;
+    
 }
-
-#lupa{
-    position: absolute;
-    top: 6.4%;
-    left: 58%;
-    background-color: beige;
-    color: black;
-    height: 17px;
-    border: #1259c3 solid 3px;
-    border-radius: 5px;
-
+a{
+    text-decoration: none;
 }
-
-.barraDesplegable{
-    background-color: #1259c3;
-    color: white;
-    display: block;
-    max-width: 2.125rem;
-    padding: 0.5rem 0;
-    border-radius: 0.5rem;
-    text-align: center;
-    font-size: 1.125rem;
-    margin: auto;
-}
-
-
-
-#cuotasetc{
-    text-align: center;
-    font-size: 12px;
-}
-
-.header-top-bar input{
-    text-align: center;
-    margin-top: 5px ;
-    padding: 1px;
-}
-
-.header-top-bar i {
-    margin-left: 8px;
-    color: #818181;
-}
-
-/*main*/
-
-main {
-    padding: 0.625rem;
-    background-color: #ebebeb;
-}
-
-picture{
-    text-align: center;
-}
-
-.images img{
-    width: 80%;
-}
-
 li{
-    list-style-type: none;
+    list-style: none;
 }
 
-.article-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.ultima-vista-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.envio i{
-    padding: 0.313rem;
-    width: 1.875rem;
-    height: 1.875rem;
-    border: 0.063rem solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    color: #39b54a;
-    position: absolute;
-    top: -15px;
-    right: 20%;
-    
-}
-
-.envio{
-    position: relative;
-}
-h5{
-    font-size: 1.125rem;
-}
-h4{
-    font-size: 1rem;
-}
-
-h1{
-    color: #666;
-    font-size: 1rem;
-}
-
-
-
-.product{
-    border-top: 2px solid #ebebeb;
-    position: relative;
-
-}
-
-.info-product{
-    display: flex;
-    align-items: center;
+/*estilos carrusel*/
+#container-slider{
     width: 100%;
-    border-top: solid 2px #ebebeb;
-    padding-left: 0.6rem;
-}
-
-article h6{
-    color:grey;
-    margin-top: 3%;
-    text-align: left;
-    padding: 0.2rem;
-    margin-top: 0.1rem;
-    margin-left: 0.2rem;
-}
-.info-product h4{
-    color: #404040;
-    font-style: normal;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
     margin-top: 1rem;
-    font-weight: 300;
 }
-.info-product h5{
-    font-size: 12px;
-    color: #39b54a;
-    margin-left: 0.1rem;
-    margin-top: 1.21rem;
-    align-items: center;
-    }
-
-#ultimaVista{
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-#ofertas {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-/* ultimaVista-section */
-
-
-
-.caf{
-    background-color: white;
-    border-top: 0.063rem solid #ebebeb;
-    margin: 0.625rem;
-}
-
-.macbook-pro-2019{
-    background-color: white;
-    border-top: 0.063rem solid #ebebeb;
-    margin: 0.625rem;
-}
-
-.samsung-galaxy{
-    background-color: white;
-    border-top: 0.063rem solid #ebebeb;
-    margin: 0.625rem;
-}
-
-.smart-tv-samsung{
-    background-color: white;
-    border-top: 0.063rem solid #ebebeb;
-    margin: 0.625rem;
-}
-
-/*offers-section*/
-
-.seccion-ofertas{
-    display:flex ;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.cafetera-off{
-    background-color: white;
-    border-top: 0.063rem solid #ebebeb;
-    margin: 0.625rem;
-}
-
-.macbook-off{
-    background-color: white;
-    border-top: 0.063rem solid #ebebeb;
-    margin: 0.625rem;
-}
-
-.samsung-off{
-    background-color: white;
-    border-top: 0.063rem solid #ebebeb;
-    margin: 0.625rem;
-}
-
-.smart-off{
-    background-color: white;
-    border-top: 0.063rem solid #ebebeb;
-    margin: 0.625rem;
-}
-
-/* footer */
-
-footer{
-    text-align: center;
-    padding: 0.625rem;
-    border: 0.100rem solid transparent;
-}
-
-.footer-section p{
-    color: #666;
-    font-size: 16px;
-}
-
-.card-icon{
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 10px ;
-    color: #1259c3;
-}
-
-.gift-icon{
-        text-align: center;
-        font-size: 2em;
-        margin-bottom: 10px ;
-        color: #1259c3;
-}
-
-.seguridad{
-    margin-top: 3%;
-}
-
-.security-icon{
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 10px ;
-    color: #1259c3;
-}
-
-footer h2{
-    color: #666;
-}
-
-.copyright h5{
-    color: #acacac;
-    margin-top: 5%;
-    font-size: 12px;
-    text-align: left; 
-}
-
-
-/* @MEDIA */
-
-@media (min-width: 361px)  {
-    .article-container {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .menus{
-        display: flex;
-        justify-content: space-between;
-    }
-    .menus ul{
-        display: flex;
-    }
-    .menus li{
-        margin: 0 0.60rem ;
-    }
-}
-
-@media (min-width:0px) and (max-width: 767px) {
-    .menus{
-        display: none;
-    }
-
-    .miCuenta{
-        display: none;
-    }
-
-    .macbook-pro-2019{
-        display: none;
-    }
-
-    .samsung-galaxy{
-        display: none;
-    }
-    .smart-tv-samsung{
-        display: none;
-    }
-
-    .cafetera-off{
-        display: none;
-    }
-
-    .samsung-off{
-        display: none;
-    }
-
-    .smart-off{
-        display: none;
-    }
-}
-@media (min-width:768px){
-    .barraDesplegable {
-        display: none;
-    }
-}
-
-
-@media (min-width:768px) and (max-width: 1023px){
-    
-    .eslogan{
-        max-width: 40%;
-        text-align: right;
-    }
-    .samsung-galaxy{
-        display: none;
-    }
-    .smart-tv-samsung{
-        display: none;
-    }
-
-    .article-container{
-        width: 40%;
-    }
-
-    .seccion-ofertas{
-        flex-wrap: nowrap;
-    }
-    .cafetera-off{
-        display: none;
-    }
-
-    .samsung-off{
-        display: none;
-    }
-
-    
+.slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+    box-shadow: 0 3px 50px;
 
 }
-
-@media (min-width:1024px) {
-    .container-header, .menus {
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    .ultima-vista-section{
-        flex-wrap: nowrap;
-    }
-
-    .seccion-ofertas{
-        flex-wrap: nowrap;
-    }
-    
+.slider__section{
+    width: 100%;
 }
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn{
+width: 40px;
+height: 40px;
+background-color: rgba(255, 255, 255, 0.7);
+transform: rotateY('-50%');
+font-size: 30px;
+font-weight: 600;
+font-family: monospace;
+text-align: center;
+border-radius: 50%;
+cursor: pointer;
+
+}
+.slider__btn:hover{
+    background-color: #fff;
+}
+.slider__btn--left{
+    left: 10px;
+}
+.slider__btn--right{
+    right: 10px;
+}
+#flechas{
+    display: flex;
+    justify-content: space-around;
+}
+/*termina estilos carrusel*/

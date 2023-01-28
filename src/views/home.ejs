@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Cachalote Cervezas</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+ <!-- empieza carrusel -->
+ <div id="container-slider">
+    <div class="slider" id="slider">
+        <div class="slider__section">
+            <img src="images/cacha1.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+            <img src="images/cacha2.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+            <img src="images/cacha3.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+            <img src="images/cacha4.png" alt="" class="slider__img">
+        </div>
+    </div>
+    <div id="flechas">
+    <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
+    <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
+    </div>
+</div>
+
+ <!-- termina carrusel -->
+ <%- include('./partials/footer.ejs') %>
+<script src="js/hamburguer.js"></script>
+<script src="js/mobile-nav.js"></script>
+<script src="js/carrusel.js"></script>
+</body>
+</html>
