@@ -1,5 +1,12 @@
 header{
+  position: fixed;
   background-color: #181818;
+  width: 100%;
+  z-index: 2;
+}
+.header.active{
+  background-color: #181818d8;
+  transition: all 1s;
 }
   
 /* estilos menu hamburguesa */
@@ -85,15 +92,14 @@ header{
     align-content: center;
     background-color: #181818;
     color: #fafafa;
-    z-index: 0;
+    z-index: 2;
     transition: all 0.3s ease-out;
     transform: translateX(-200%);
-}#mobile-nav.active{
+  }#mobile-nav.active{
   transform: translateX(0);
   transition: all 0.5s ease-out;
 }#mobile-nav img{
-  position: fixed;
-  left: 3rem;
+  position: fixed;  
   top: 0;
 }#mobile-nav a{
   color: #fafafa;
@@ -108,14 +114,21 @@ header{
 #menu-cervezas .a{
   display: none;
   margin: 1rem;
-  font-size: 24px;
+  color: #979797;
+  font-size: 12px;
+  opacity: 0;
 }
 #menu-cervezas:hover .a{
   display: flex;
-}
-.a a{
   color: #fafafa;
   font-size: 16px;
+  opacity: 1;
+  transition: all 1s;
+}
+#menu-cervezas:hover li{
+  color: aquamarine;
+  font-size: 24px;
+  transition: all 1s;
 }
 #desplegable i{
   font-size: 26px;

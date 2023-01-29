@@ -22,12 +22,18 @@ li{
 }
 
 /*estilos carrusel*/
+
+.btn:hover > .slider__btn{
+    opacity: 0;
+}
 #container-slider{
     width: 100%;
     max-width: 900px;
     margin: auto;
     overflow: hidden;
     margin-top: 1rem;
+    position: relative;
+    z-index: 0;
 }
 .slider{
     display: flex;
@@ -49,27 +55,27 @@ li{
 .slider__btn{
 width: 40px;
 height: 40px;
-background-color: rgba(255, 255, 255, 0.7);
 transform: rotateY('-50%');
-font-size: 30px;
+font-size: 2rem;
 font-weight: 600;
 font-family: monospace;
 text-align: center;
 border-radius: 50%;
 cursor: pointer;
-
+color: #181818;
 }
-.slider__btn:hover{
-    background-color: #fff;
+.slider__btn:active{
+    color: #fff;
 }
 .slider__btn--left{
     left: 10px;
+    position: absolute;
+    top: 50%;
 }
 .slider__btn--right{
     right: 10px;
+    position: absolute;
+    top: 50%;
 }
-#flechas{
-    display: flex;
-    justify-content: space-around;
-}
+
 /*termina estilos carrusel*/

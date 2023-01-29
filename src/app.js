@@ -14,9 +14,35 @@ app.set('view engine', 'ejs');
 app.get("/", function(req,res){
     return res.render("home.ejs");
 });
-app.get ('/register', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/register.html'));
+
+app.get("/", function(req,res){
+    return res.render("home.ejs");
 });
-app.get ('/login', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/login.html'));
+
+app.get("/", function(req,res){
+    return res.render("home.ejs");
+});
+
+app.get("/", function(req,res){
+    return res.render("home.ejs");
+});
+
+app.get("/", function(req,res){
+    return res.render("home.ejs");
+});
+
+app.get("/", function(req,res){
+    return res.render("home.ejs");
+});
+
+app.get("/", function(req,res){
+    return res.render("home.ejs");
+});
+
+app.get("/", function(req,res){
+    return res.render("home.ejs");
+});
+
+app.get("/", function(req,res){
+    return res.render("home.ejs");
 });

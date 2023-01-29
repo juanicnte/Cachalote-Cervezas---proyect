@@ -13,7 +13,9 @@
 </head>
 <body>
     <%- include('./partials/header.ejs') %>
- <!-- empieza carrusel -->
+    <main>
+    <img id="imagen-cacha" src="/images/cacha_black_eascuma3.jpg" alt="">
+    <!-- empieza carrusel -->
  <div id="container-slider">
     <div class="slider" id="slider">
         <div class="slider__section">
@@ -29,14 +31,15 @@
             <img src="images/cacha4.png" alt="" class="slider__img">
         </div>
     </div>
-    <div id="flechas">
     <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
     <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
     </div>
 </div>
 
  <!-- termina carrusel -->
+</main>
  <%- include('./partials/footer.ejs') %>
+ <script src="js/header.js"></script>
 <script src="js/hamburguer.js"></script>
 <script src="js/mobile-nav.js"></script>
 <script src="js/carrusel.js"></script>
