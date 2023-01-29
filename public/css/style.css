@@ -1,5 +1,6 @@
 @import url('header.css');
 @import url('footer.css');
+
 *{
     font-family: 'Alegreya SC', serif;
     padding: 0;
@@ -9,10 +10,7 @@
     border: none;
 }
 body{
-    background-image: url(../images/muro-hormigon-gris.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-color: #f1f0e4;
 }
 a{
     text-decoration: none;

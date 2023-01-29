@@ -15,34 +15,34 @@ app.get("/", function(req,res){
     return res.render("home.ejs");
 });
 
-app.get("/", function(req,res){
-    return res.render("home.ejs");
+app.get("/AAA", function(req,res){
+    return res.render("aaa.ejs");
 });
 
-app.get("/", function(req,res){
-    return res.render("home.ejs");
+app.get("/doradaPampeana", function(req,res){
+    return res.render("dorada.ejs");
 });
 
-app.get("/", function(req,res){
-    return res.render("home.ejs");
+app.get("/goldenALE", function(req,res){
+    return res.render("golden.ejs");
 });
 
-app.get("/", function(req,res){
-    return res.render("home.ejs");
+app.get("/honey", function(req,res){
+    return res.render("honey.ejs");
 });
 
-app.get("/", function(req,res){
-    return res.render("home.ejs");
+app.get("/americanIPA", function(req,res){
+    return res.render("a-IPA.ejs");
 });
 
-app.get("/", function(req,res){
-    return res.render("home.ejs");
+app.get("/porter", function(req,res){
+    return res.render("porter.ejs");
 });
 
-app.get("/", function(req,res){
-    return res.render("home.ejs");
+app.get("/sessionIPA", function(req,res){
+    return res.render("s-IPA.ejs");
 });
 
-app.get("/", function(req,res){
-    return res.render("home.ejs");
+app.get("/scottishExport", function(req,res){
+    return res.render("scottish.ejs");
 });
