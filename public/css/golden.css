@@ -1,0 +1,81 @@
+@import url('header.css');
+@import url('footer.css');
+@import url('style.css');
+
+.header{
+    margin-top: -1rem;
+}
+/*estilos carrusel*/
+.slider{
+    margin-top: 2rem;
+    height: 37rem;
+}
+/*termina estilos carrusel*/
+
+#descripcion{
+    margin: 2rem;
+}
+
+#titulo{
+    font-family: 'Bebas Neue', cursive;
+    color: #572179;
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+.subtitulo{
+    font-size: 1.5rem;
+    margin: -1rem 0 0 0.5rem;
+    color: #000000c7;
+    letter-spacing: 3px;
+}
+.parrafo{
+    font-size: 2rem;
+    color: #1c1c1c;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue';
+}
+
+#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #57217980;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(28 28 28);
+    font-size: 20px;
+}.border{
+    border-right: 1px solid;
+}
+
+.medallero{
+    margin-top: 5rem;
+}
+
+.medallero p{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Alegreya SC';
+    font-weight: 600;
+}
+
+.medallas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medallas img{
+    width: 11rem;
+}
+
+.numeros-info{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
