@@ -22,18 +22,19 @@ header{
 #btn{
   background: #181818;
   
-  width: 50px;
+  width: 100%;
   height: 50px;
   
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   
   border: none;
   cursor: pointer;
 
   transition: .5s;
+  padding-right: 1rem;
 }
 
 .btn-content:nth-child(1){
@@ -94,7 +95,7 @@ header{
     color: #fafafa;
     z-index: 2;
     transition: all 0.3s ease-out;
-    transform: translateX(-200%);
+    transform: translateX(200%);
   }#mobile-nav.active{
   transform: translateX(0);
   transition: all 0.5s ease-out;
@@ -107,32 +108,35 @@ header{
 #logo-container{
   position: relative;
 }
+
+/*lista cervezas*/
 #menu-cervezas{
-  position: relative;
-  color: #fafafa;
-}
-#menu-cervezas .a{
-  display: none;
-  margin: 1rem;
-  color: #979797;
-  font-size: 12px;
-  opacity: 0;
-}
-#menu-cervezas:hover .a{
   display: flex;
-  color: #fafafa;
-  font-size: 16px;
+  flex-direction: column;
+}
+.cervezas-lista{
+  font-size: 1.5rem;
+}
+.abrir-caja{
+  opacity: 0;
+  height: 0;
+}
+
+[id^=btn-cervezas]:checked + .abrir-caja{
   opacity: 1;
+  height: 16rem;
   transition: all 1s;
 }
-#menu-cervezas:hover li{
-  color: aquamarine;
-  font-size: 24px;
-  transition: all 1s;
+
+.button-cervezas i{
+  font-size: 2rem;
+  padding-left: 1rem;
 }
-#desplegable i{
-  font-size: 26px;
+
+#btn-cervezas{
+  display: none;
 }
+/*termina*/
 
 /* fin estilos menu hamburguesa */
 #imagen-cacha{

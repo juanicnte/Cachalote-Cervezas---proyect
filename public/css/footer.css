@@ -42,6 +42,8 @@ footer img{
     gap: 1rem;
     color: #e4e4e4;
     flex-direction: column;
+    margin: 0px 1rem;
+    padding-bottom: 0.5rem;
 }
 
 #derechos{
