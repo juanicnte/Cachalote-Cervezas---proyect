@@ -50,3 +50,7 @@ app.get("/scottishExport", function(req,res){
 app.get("/NuestrasCervezas", function(req,res){
     return res.render("all-beers.ejs");
 });
+
+app.get("/paginaEnConstruccion", function(req,res){
+    return res.render("paginaEnConstruccion.ejs");
+});

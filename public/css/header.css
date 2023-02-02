@@ -127,12 +127,12 @@ header{
   font-size: 1.5rem;
 }
 .abrir-caja{
-  opacity: 0;
+  display: none;
   height: 0;
 }
 
 [id^=btn-cervezas]:checked + .abrir-caja{
-  opacity: 1;
+  display: block;
   height: 16rem;
   transition: all 1s;
 }
