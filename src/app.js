@@ -46,3 +46,7 @@ app.get("/sessionIPA", function(req,res){
 app.get("/scottishExport", function(req,res){
     return res.render("scottish.ejs");
 });
+
+app.get("/NuestrasCervezas", function(req,res){
+    return res.render("all-beers.ejs");
+});

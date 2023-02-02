@@ -2,13 +2,15 @@
 @import url('footer.css');
 @import url('style.css');
 
-.header{
-    margin-top: -1rem;
-}
+
 /*estilos carrusel*/
-.slider{
-    margin-top: 2rem;
-    height: 37rem;
+#container-slider{
+    width: 100%;
+    height: 40rem;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 /*termina estilos carrusel*/
 
