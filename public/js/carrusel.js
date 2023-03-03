@@ -37,3 +37,6 @@ btnLeft.addEventListener('click', function() {
     prev();
 });
 
+/*setInterval(function(){
+    next()
+, 5000)*/

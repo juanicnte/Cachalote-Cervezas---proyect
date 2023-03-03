@@ -81,3 +81,9 @@
     font-size: 1.5rem;
     font-weight: 600;
 }
+
+@media (min-width: 1024px){
+    #descripcion{
+        margin: 2rem 15rem;
+    }
+}

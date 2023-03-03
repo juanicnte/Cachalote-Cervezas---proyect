@@ -83,3 +83,17 @@ main{
 #scottish{
     color: #87343e;
 }
+
+@media screen and (min-width: 780px) {
+    #container-all{
+    width: 78%;
+    margin: auto;
+    }
+}
+
+@media (min-width: 1024px){
+    .article-container {
+        width: 13rem;
+        height: 16rem;
+    }
+}
